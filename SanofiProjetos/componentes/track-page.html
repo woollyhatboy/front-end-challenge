@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status do Pedido - Sanofi</title>
+    <link rel="stylesheet" href="/styles/track-page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- barra lateral -->
+    <div class="sidebar">
+        <button class="close-hamburger" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 40 40" fill="none">
+                <path d="M0 40V33.3333H40V40H0ZM0 23.3333V16.6667H40V23.3333H0ZM0 6.66667V0H40V6.66667H0Z"
+                    fill="#333" />
+            </svg>
+        </button>
+        <a href="/componentes/home-page.html" class="sidebar-item">Home</a>
+        <a href="/componentes/relatorio-despesas.html" class="sidebar-item">Relatório</a>
+        <a href="/componentes/track-page.html" class="sidebar-item">Track</a>
+        <a href="/componentes/perfil.html" class="sidebar-item">Perfil</a>
+    </div>
+    
+    <!-- Cabeçalho elegante -->
+    <header>
+        <div class="nav-left">
+            <!-- menu -->
+            <button class="menu-hamburger" onclick="toggleSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 40 40" fill="none">
+                    <path d="M0 40V33.3333H40V40H0ZM0 23.3333V16.6667H40V23.3333H0ZM0 6.66667V0H40V6.66667H0Z"
+                        fill="#7901E6" />
+                </svg>
+            </button>
+            <ul class="menu">
+                <li><a href="/componentes/home-page.html">HOME</a></li>
+                <li><a href="/componentes/relatorio-despesas.html">RELATÓRIO</a></li>
+                <li><a href="/componentes/track-page.html">TRACK</a></li>
+            </ul>
+        </div>
+            
+            <!-- Logo centralizado -->
+            <div class="logo">
+                <img src="https://c.animaapp.com/u9jFIJuy/img/logo-sanofi--2022--removebg-preview-1@2x.png"
+                    alt="Sanofi Logo">
+            </div>
+
+            <div class="nav-right">
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button class="search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M27.6667 29.2105L17.1667 18.9868C16.3333 19.636 15.375 20.1499 14.2917 20.5285C13.2083 20.9072 12.0556 21.0965 10.8333 21.0965C7.80556 21.0965 5.24306 20.0755 3.14583 18.0334C1.04861 15.9914 0 13.4963 0 10.5482C0 7.60015 1.04861 5.10508 3.14583 3.06305C5.24306 1.02102 7.80556 0 10.8333 0C13.8611 0 16.4236 1.02102 18.5208 3.06305C20.6181 5.10508 21.6667 7.60015 21.6667 10.5482C21.6667 11.7383 21.4722 12.8607 21.0833 13.9156C20.6944 14.9704 20.1667 15.9035 19.5 16.7149L30 26.9386L27.6667 29.2105ZM10.8333 17.8509C12.9167 17.8509 14.6875 17.1409 16.1458 15.7209C17.6042 14.301 18.3333 12.5768 18.3333 10.5482C18.3333 8.51974 17.6042 6.7955 16.1458 5.37555C14.6875 3.95559 12.9167 3.24561 10.8333 3.24561Z"
+                                fill="#7901E6" />
+                        </svg>
+                    </button>
+                </div>
+
+                <button class="profile-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="31" viewBox="0 0 29 31" fill="none">
+                        <path
+                            d="M26.1667 28.625V25.7083C26.1667 24.1612 25.5521 22.6775 24.4582 21.5835C23.3642 20.4896 21.8805 19.875 20.3334 19.875H8.66671C7.11961 19.875 5.63588 20.4896 4.54192 21.5835C3.44796 22.6775 2.83337 24.1612 2.83337 25.7083V28.625M20.3334 8.20833C20.3334 11.43 17.7217 14.0417 14.5 14.0417C11.2784 14.0417 8.66671 11.43 8.66671 8.20833C8.66671 4.98667 11.2784 2.375 14.5 2.375C17.7217 2.375 20.3334 4.98667 20.3334 8.20833Z"
+                            stroke="#7901E6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção principal com status do pedido -->
+    <main>
+        <section class="order-status">
+            <div class="status-card received">
+                <i class="fas fa-truck-loading"></i>
+                <h2>Seu pedido foi recebido!</h2>
+                <p>Estamos preparando seu pedido.</p>
+                <p><strong>Número do Pedido:</strong> 264903</p>
+                <p>15 x Capa para Ipad<br>40 x Cabo Usb C</p>
+                <a href="#" class="contact-link">Problemas com o pedido? Entre em contato conosco!</a>
+            </div>
+
+            <div class="status-card in-transit">
+                <i class="fas fa-box"></i>
+                <h2>Seu pedido está a caminho!</h2>
+                <p>Conferido e será entregue em breve.</p>
+                <p><strong>Número do Pedido:</strong> 264903</p>
+                <p>15 x Capa para Ipad<br>40 x Cabo Usb C</p>
+                <p class="eta">Entrega prevista em <strong>7 dias</strong></p>
+                <a href="#" class="contact-link">Problemas com o pedido? Entre em contato conosco!</a>
+            </div>
+
+            <div class="status-card delivered">
+                <i class="fas fa-truck"></i>
+                <h2>Seu pedido foi entregue!</h2>
+                <p>Obrigado por comprar conosco!</p>
+                <p><strong>Número do Pedido:</strong> 264903</p>
+                <p>15 x Capa para Ipad<br>40 x Cabo Usb C</p>
+                <a href="#" class="contact-link">Problemas com o pedido? Entre em contato conosco!</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 Sanofi. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para ativar/desativar a barra lateral -->
+    <script>
+        function toggleSidebar() {
+            document.querySelector('.sidebar').classList.toggle('active');
+        }
+    </script>
+
+</body>
+
+</html>

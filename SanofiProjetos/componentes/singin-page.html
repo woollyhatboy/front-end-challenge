@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanofi Micro Management System</title>
+    <link rel="stylesheet" href="/styles/singin-page.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="https://c.animaapp.com/u9jFIJuy/img/logo-sanofi--2022--removebg-preview-1@2x.png"
+                alt="Logo Sanofi">
+            <h2>Micro Management System</h2>
+            <form id="registerForm">
+                <input type="text" placeholder="Nome" required>
+                <input type="email" placeholder="Email" required>
+                <input type="text" placeholder="Documento" required>
+                <input type="text" placeholder="Celular" required>
+                <input type="date" required>
+                <input type="password" placeholder="Senha" required>
+                <input type="password" placeholder="Confirmação de senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o comportamento padrão do formulário
+
+            // Capturar os valores dos campos
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+
+            // Verificar se as senhas coincidem
+            if (password !== confirmPassword) {
+                alert('As senhas não coincidem!');
+                return;
+            }
+
+            // Aqui você pode adicionar a lógica para salvar os dados do usuário em um banco de dados
+
+            // Após o cadastro, redirecione para a página de login
+            window.location.href = 'componentes/pagina-de-login.html';
+        });
+    </script>
+</body>
+
+</html>

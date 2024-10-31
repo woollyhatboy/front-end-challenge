@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sanofi</title>
+    <link rel="stylesheet" href="/styles/pagina-de-login.css" />
+</head>
+
+<body>
+    <div class="log-in-page">
+        <div class="login-container">
+            <img class="logo-sanofi"
+                src="https://c.animaapp.com/u9jFIJuy/img/logo-sanofi--2022--removebg-preview-1@2x.png"
+                alt="Sanofi Logo" />
+            <h2 class="login-title">Micro Management System</h2>
+
+            <form class="login-form">
+                <label for="username" class="form-label">Usuário</label>
+                <input type="text" id="username" class="form-input" placeholder="Digite seu usuário" required />
+
+                <label for="password" class="form-label">Senha</label>
+                <input type="password" id="password" class="form-input" placeholder="Digite sua senha" required />
+
+                <button type="button" class="login-button" onclick="validateForm()">Entrar</button>
+            </form>
+
+            <p class="create-account">Não tem ID Sanofi? <a href="/componentes/singin-page.html">Crie ele agora.</a></p>
+            <p class="forgot-password"><a href="/componentes/forgot-password.html">Esqueceu a senha?</a></p>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === "" || password === "") {
+                alert("Por favor, preencha os campos de usuário e senha.");
+            } else if (username === "usuario123" && password === "1234") {
+                location.href = "/componentes/home-page.html";
+            } else {
+                if (confirm("Usuário não encontrado. Deseja criar um cadastro?")) {
+                    location.href = "/componentes/singin-page.html"; // Redireciona para a página de cadastro
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

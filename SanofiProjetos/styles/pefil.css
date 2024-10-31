@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2, h4 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.profile-card {
+    background-color: #fff;
+    width: 350px;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+.profile-header {
+    margin-bottom: 30px;
+}
+
+.profile-picture {
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+    background-color: #7901E6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(121, 1, 230, 0.3);
+}
+
+.profile-picture svg {
+    width: 45px;
+    height: 50px;
+}
+
+h2 {
+    margin: 20px 0 15px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+}
+
+.view-profile-btn {
+    background-color: transparent;
+    border: 2px solid #7901E6;
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: #7901E6;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-profile-btn:hover {
+    background-color: #7901E6;
+    color: #fff;
+}
+
+.profile-info {
+    background-color: #f0f2f5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.info-item {
+    padding: 12px 0;
+}
+
+.info-btn {
+    background-color: #7901E6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(121, 1, 230, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(121, 1, 230, 0.4);
+}
+
+/* Adjusting last item spacing */
+.info-item:last-child {
+    margin-bottom: 0;
+}
